@@ -10,6 +10,7 @@ import About from "./pages/About";
 import ContactPage from "./pages/Contact/ContactPage";
 import CareerPage from "./pages/Career/CareerPage.jsx";
 import JobDetailsPage from "./pages/Career/JobDetailsPage.jsx";
+import JobList from "./components/AdminPage/JobList.jsx";
 import Home from "./pages/Home/Home.jsx";
 
 import EngineeringDesign from "./pages/structural-steel-dropdown/EngineeringDesign.jsx";
@@ -100,6 +101,8 @@ function App() {
         <Route path="/careers" element={<CareerPage />} />
         <Route path="/career/:id" element={<JobDetailsPage />} />
         <Route path="/jobs/:id" element={<DetailedJobList />} />
+        <Route path="/admin/job-list"element={<AdminProtectedRoute><JobList /></AdminProtectedRoute> }/>
+
 
         {/* ✅ FIXED ADMIN ROUTE COMPONENT */}
        <Route path="/admin/add-client" element={<UploadNewClients />} />

@@ -4,7 +4,7 @@ import { motion as Motion } from "framer-motion";
 import Chatbot from "../../components/Chatbot";
 
 // 🖼 Image imports
-import MechymaImage from "../../assets/Home-Images/Mechyam02.png";
+import MechymaImage2 from "../../assets/Home-Images/Mechyam02.png";
 import MechymaImage1 from "../../assets/Home-Images/Mechyam01.jpg"
 import engineeringImg from "../../assets/EngineeringDesign-Images/engineeringdesign.jpg";
 import structuralImg from "../../assets/StructuralAnalysis-Images/structural-analysis.jpg";
@@ -43,7 +43,7 @@ const Home = () => {
           🏠 HERO SECTION
       ============================== */}
       {/* <section id="home" className="relative w-screen h-screen bg-grey-500 flex items-center justify-center overflow-hidden" > 
-        <img src={MechymaImage} alt="MECHYAM" className="w-full h-full object-contain mix-blend-multiply scale-110" /> */}
+        <img src={MechymaImage2} alt="MECHYAM" className="w-full h-full object-contain mix-blend-multiply scale-110" /> */}
 
         <section id="home" className="relative w-full h-[80vh] md:h-screen overflow-hidden" > 
           <img src={MechymaImage1} alt="MECHYAM" loading="eager" decoding="async" className="w-full h-full object-cover brightness-95 contrast-110" />
@@ -74,7 +74,7 @@ const Home = () => {
           >
             <Link
               to="/about"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg font-medium transition"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-medium transition"
             >
               Learn More
             </Link>

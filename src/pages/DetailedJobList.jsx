@@ -2,6 +2,7 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
+
 const DetailedJobList = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -28,11 +29,12 @@ const DetailedJobList = () => {
     <div className="min-h-screen bg-gray-50 p-6">
       {/* Back button for navigation */}
       <button
-        className="mb-6 px-4 py-2 bg-blue-600 text-white rounded"
-        onClick={() => navigate(-1)}
-      >
-        ← Back
-      </button>
+  className="mb-6 px-4 py-2 bg-blue-600 text-white rounded"
+  onClick={() => navigate("/admin/job-list")}
+>
+  ← Back
+</button>
+
 
       {/* Main Job Details Card */}
       <div className="bg-white p-8 rounded-xl shadow-md max-w-4xl mx-auto">
